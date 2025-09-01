@@ -11,7 +11,12 @@ contract  DataStore{
 
     Person[] public person;
 
-    function storeData(string memory _nama, string memory _alamat, string memory _tanggal_lahir, string memory _jenis_kelamin) public {
+    function storeData(
+        string memory _nama, 
+        string memory _alamat, 
+        string memory _tanggal_lahir, 
+        string memory _jenis_kelamin) 
+    public {
         person.push(Person( _nama, _alamat, _tanggal_lahir, _jenis_kelamin));
     }
 
